@@ -1,0 +1,19 @@
+
+<form action="/landmarks" method="post">
+
+  <h1>Create your landmark!</h1>
+
+  <input id="landmark_name" type="text" name="landmark[name]" placeholder="Name of Your Building">
+
+  <input id="landmark_year_completed" type="number" name="landmark[year_completed]" placeholder="Year Established">
+
+  <br>
+
+  <%@figures.each do |figure|%>
+    <input type="checkbox" name="landmark[figure_id][]" value="<%=figure.id%>" id="<%=figure.id%>"><%=figure.name%>
+    <%end%>
+
+  <button>Create New Landmark</button>
+
+  <!-- redirect  -->
+</form>

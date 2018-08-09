@@ -44,7 +44,7 @@ figure_list = {
     },
     "Ada Lovelace" => {
     },
-    "Linus Torvalds" => { 
+    "Linus Torvalds" => {
     }
   }
 
@@ -56,11 +56,13 @@ end
 
 
 title_list = {
-    "The Mayor" => {
+    "Mayor" => {
     },
-    "The Don" => {
+    "Sir" => {
     },
-    "Mr. President" => {
+    "Dame" => {
+    },
+    "President" => {
     }
   }
 

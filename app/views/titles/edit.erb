@@ -1,0 +1,20 @@
+
+<form action="/titles/<%= @title.id %>" method="post">
+<input type="hidden" name="_method" value ="patch">
+
+  <h1>Edit your title!</h1>
+
+  <input id="name" type="text" name="title[name]" value="<%= @title.name %>" >
+
+  <button>Edit Title</button>
+
+</form>
+
+
+
+<form action="/titles/<%= @title.id %>" method="post">
+<input type="hidden" name="_method" value ="delete">
+
+  <button>Destroy This Title</button>
+
+</form>

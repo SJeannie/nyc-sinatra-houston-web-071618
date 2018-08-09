@@ -1,0 +1,20 @@
+<form action="/figures" method="post">
+
+  <h1>Birth your person!</h1>
+
+  <input id="figure_name" type="text" name="figure[name]" placeholder="Name of Your Person">
+  <br>
+
+  <%@titles.each do |title|%>
+    <input type="checkbox" name="figure[title_ids][]" value="<%=title.id%>" id="<%=title.id%>"><%=title.name%>
+    <br>
+<%end%>
+
+<%@landmarks.each do |landmark|%>
+  <input type="checkbox" name="figure[landmark_ids][]" value="<%=landmark.id%>" id="<%=landmark.id%>"><%=landmark.name%>
+  <br>
+<%end%>
+
+  <button>Birth your person!</button>
+
+</form>
